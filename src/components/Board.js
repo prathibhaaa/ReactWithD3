@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Items from '../assets/Items.json';
 import {connect} from 'react-redux'
 import {ADD, REMOVE, ADDPRICE} from '../store/actions'
 
@@ -16,16 +15,16 @@ function Board(props, dispatch) {
         <div>
             {props.items.map((item) => {return item.selected && <div key={item.id} id={item.id} className='card m-2' draggable="true">
                 <div className='row p-2'>
-                    <div className='col-6'>{item.name} </div>
-                    <div className='col-4'>{item.currency}{item.value.toFixed(2)}</div>
-                    <div className='col-1'>
-                        <button type="button"
-                            id={item.id}
-                            onClick={(e)=>removeItem(e)}
-                            className="btn btn-xs btn-danger img-circle"
-                            ><span id={item.id} aria-hidden="true">&times;</span></button></div>
-                    </div></div>})}
-            </div>
+                <div className='col-6'>{item.name} </div>
+                <div className='col-4'>{item.currency}{item.value.toFixed(2)}</div>
+                <div className='col-1'>
+                    <button type="button"
+                        id={item.id}
+                        onClick={(e)=>removeItem(e)}
+                        className="btn btn-xs btn-danger img-circle"
+                        ><span id={item.id} aria-hidden="true">&times;</span></button></div>
+                </div></div>})}
+        </div>
     )
 
 }

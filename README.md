@@ -1,6 +1,6 @@
 # Items Cart
 
-Demo:https://master.d3m7no0s1ze9gg.amplifyapp.com/
+Demo:https://master.d1adx4pwwu0ll5.amplifyapp.com/
 
 Note:
 - Item Cart with **React Functional Component with hooks, D3Js,  Redux, Webpack & Babel**
